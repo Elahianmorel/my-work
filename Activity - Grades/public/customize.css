@@ -1,0 +1,27 @@
+body
+{
+	background-color: #90a48b;
+	justify-content: center;
+	align-items: left;
+}
+
+label
+{
+	display:inline-block;
+	color: #f3eaf1;
+}
+
+input
+{
+	width: 10%;
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+input[type="Submit"]:hover
+{
+	background-color: #c8abcf;
+	color: #c8abcf;
+}
