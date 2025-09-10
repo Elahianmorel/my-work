@@ -1,0 +1,27 @@
+body
+{
+	background-color: #dfe4d3;
+	justify-content: center;
+	align-items:center;
+}
+
+label
+{
+	display: inline-block;
+	color: #688397;
+}
+
+input
+{
+	width: 30%;
+	padding: 15px;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+input[type="submit"]:hover
+{
+	background-color: blue;
+	color: #ffffff;
+}
