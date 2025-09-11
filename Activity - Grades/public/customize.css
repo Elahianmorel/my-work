@@ -1,20 +1,21 @@
 body
 {
-	background-color: #90a48b;
+	background-color: #e5ede7;
 	justify-content: center;
-	align-items: left;
+	align-items: center;
+	text-align: center;
 }
 
 label
 {
 	display:inline-block;
-	color: #f3eaf1;
+	color: #0f111e;
 }
 
 input
 {
-	width: 10%;
-	padding: 15px;
+	width: 30%;
+	padding: 30px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	font-size: 14px;
@@ -22,6 +23,6 @@ input
 
 input[type="Submit"]:hover
 {
-	background-color: #c8abcf;
-	color: #c8abcf;
+	background-color: #b96166;
+	color: #b96166;
 }
