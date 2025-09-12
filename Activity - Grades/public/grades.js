@@ -2,7 +2,7 @@ window.addEventListener("load",addListener);
 
 function addListener()
 {
-	document.getElementById("btngrade").addEventListener("click",gradeinfo);
+	document.getElementById("btnenter").addEventListener("click",gradeinfo);
 }
 
 function gradeinfo()
@@ -12,17 +12,10 @@ function gradeinfo()
 	g3 = document.getElementById("txtgrade3").value;
 	g4 = document.getElementById("txtgrade4").value;
 	g5 = document.getElementById("txtgrade5").value;
-	
-	if(g1 == "" || g2 == "" || g3 == "" || g4 == "" || g5 == "" )
-	{
-		alert("Missing grade")
-	}
-	else
-	{
-		overall = (int(g1) + int(g2) + int(g3) + int(g4) + int(g5) )
+
+		overall = (parseInt(g1) + parseInt(g2) + parseInt(g3) + parseInt(g4) + parseInt(g5))
 		
-		avg = (int(overall)/int(5))
-		alert(str(avg));
-		document.write("your grade is" + str(avg))
-	}
+		avg = (parseInt(overall)/parseInt(5))
+		document.write("your average is" + avg)
+
 }
