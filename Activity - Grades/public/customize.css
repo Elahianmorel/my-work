@@ -9,15 +9,15 @@ body
 label
 {
 	display:inline-block;
-	color: #0f111e;
+	color: rgb(0, 0, 0);
 }
 
 input
 {
-	width: 30%;
-	padding: 30px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
+	width: 20%;
+	padding: 20px;
+	border: 0px solid #ccc;
+	border-radius: 1px;
 	font-size: 14px;
 }
 
@@ -25,4 +25,9 @@ input[type="Submit"]:hover
 {
 	background-color: #b96166;
 	color: #b96166;
+}
+
+body2
+{
+	color: #000000;
 }
