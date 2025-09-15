@@ -16,6 +16,6 @@ function gradeinfo()
 		overall = (parseInt(g1) + parseInt(g2) + parseInt(g3) + parseInt(g4) + parseInt(g5))
 		
 		avg = (parseInt(overall)/parseInt(5))
-		document.write("your average is" + avg)
+		document.write("your average is " + avg)
 
 }
