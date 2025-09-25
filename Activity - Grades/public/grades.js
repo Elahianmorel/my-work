@@ -22,7 +22,39 @@ function gradeinfo()
 		overall = (parseInt(g1) + parseInt(g2) + parseInt(g3) + parseInt(g4) + parseInt(g5))
 		
 		avg = (parseInt(overall)/parseInt(5))
-		document.write("Your classes " + c1 + " " + c2 + " " + c3 + " " + c4 + " " + c5)
-		document.write("your average is " + avg)
+		
+		
+showResult()
+
+}
+
+function showResult()
+{
+	let message = "";
+	
+	
+	switch (true)
+	{
+		case (avg >= 90 && avg <= 100):
+			message = "Your GPA is 4 and you have an A : "
+			break;
+		case (avg >= 80 && avg <= 89.99):
+			message = "Your GPA is 3 and you have a B : "
+			break;
+		case (avg >= 70 && avg <= 79.99):
+			message = "Your GPA is 2 and you have a C : "
+			break;
+		case (avg >= 60 && avg <= 69.99):
+			message = "Your GPA is 1 and you have a D  "
+			break;
+		case (avg >= 60 && avg <= 69.99):
+			message = "Your GPA is 0 and you have an F : "
+			break;
+		default:
+			message = "invalid"
+	}	
+			
+	document.getElementById("lblResult").textContent = message
+	document.getElement
 
 }
