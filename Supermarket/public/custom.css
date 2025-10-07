@@ -1,0 +1,30 @@
+body
+{
+	background-color: #e5ede7;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+label
+{
+	display:inline-block;
+	color: rgb(0, 0, 0);
+	
+}
+
+input
+{
+	width: 20%;
+	padding: 20px;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	font-size: 14px;
+}
+
+button:hover
+{
+	background-color: #8eb096;
+	color: #e5ede7;
+	
+}
