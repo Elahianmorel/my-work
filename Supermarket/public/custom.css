@@ -1,10 +1,14 @@
+.container {
+	display: flex;
+}
 body
 {
 	background-color: #e5ede7;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	
+	background-image: url("");
+
 	
 }
 
@@ -22,16 +26,15 @@ label
 input
 {
 	width: 20%;
-	padding: 20px;
-	border: 1px solid #8eb096;
-	border-radius: 10px;
+	padding: 0px;
+	border: 0px solid #8eb096;
+	border-radius: 0px;
 	font-size: 14px;
 }
 
 button:hover
 {
-	background-color: #8eb096;
+	background-color: #e5ede7;
 	color: #e5ede7;
 	
 }
-
