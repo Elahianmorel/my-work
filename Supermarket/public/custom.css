@@ -1,13 +1,10 @@
-.container {
-	display: flex;
-}
 body
 {
-	background-color: #e5ede7;
+	background-color: #C2A68C;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-image: url("");
+
 
 	
 }
@@ -17,7 +14,7 @@ label
 	display:display-center;
 	gap: 10px;
 	margin: 0 5px;
-	color: rgb(0, 0, 0);
+	color: #5D866C;
 	
 	
 	
@@ -27,14 +24,14 @@ input
 {
 	width: 20%;
 	padding: 0px;
-	border: 0px solid #8eb096;
+	border: 0px solid rgb(255, 255, 255);
 	border-radius: 0px;
 	font-size: 14px;
 }
 
 button:hover
 {
-	background-color: #e5ede7;
-	color: #e5ede7;
+	background-color: #5D866C;
+	color: #56ce9b;
 	
 }
