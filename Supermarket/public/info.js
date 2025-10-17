@@ -4,6 +4,7 @@ fruit_amount = 0
 vegetable_amount = 0
 snack_amount = 0
 
+
 function addListener()
 {	
 	// Fruits //
@@ -43,9 +44,8 @@ function fruit()
 	total = total + 3
 	fruit_amount = fruit_amount + 1
 	alert(total)
-
+	show()
 	
-
 }
 
 
@@ -55,8 +55,7 @@ function vegetables()
 	total = total + 5
 	vegetable_amount = vegetable_amount + 1
 	alert(total)
-
-	
+	show()
 
 }
 
@@ -67,12 +66,14 @@ function snacks()
 	total = total + 7
 	snack_amount = snack_amount + 1
 	alert(total)
-	
+	show()
 
 }
 
 
 function show()
 {
-	
+	li.textContent = fruit_amount;
+	alert("hi")
+	fruit.appendChild(li);
 }
