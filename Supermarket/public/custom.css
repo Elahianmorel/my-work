@@ -1,6 +1,6 @@
 body
 {
-	background-color: #B7B89F;
+	background-color: #fbfbfb;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -30,10 +30,25 @@ input
 
 button:hover
 {
-	background-color: #777C6D;
-	color: #777C6D;
+	background-color: #99a0a5;
 	padding: 10px 10px;
     border-radius: 5px;
     cursor: pointer;
 	
+}
+
+h4
+{
+	position: absolute;
+	left: 50px;
+	top: 250px;
+}
+
+#btnresult {
+	position: absolute;
+	left:880px;
+	top: 500px;
+	
+	padding: 20px 50px;
+	background-color: #99a0a5;
 }
