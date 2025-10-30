@@ -4,19 +4,16 @@ body
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-
-
 	
 }
 
 label
 {
 	display:display-center;
-	gap: 15px;
+	gap: 5px;
 	margin: 0 5px;
 	color: #000000;
-	
-	
+
 	
 }
 
@@ -42,13 +39,4 @@ h4
 	position: absolute;
 	left: 50px;
 	top: 250px;
-}
-
-#btnresult {
-	position: absolute;
-	left:880px;
-	top: 500px;
-	
-	padding: 20px 50px;
-	background-color: #99a0a5;
 }
