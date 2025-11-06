@@ -6,7 +6,7 @@ items = [apple, banana, Strawberry, Mango, Dragon, pineapple]
 function addListener()
 {	
 	// Fruits //
-	document.getElementById("btnbanana").addEventListener("click", fruit)
+	document.getElementById("btnapple").addEventListener("click", fruit)
 	document.getElementById("btnbanana").addEventListener("click", fruit)
 	document.getElementById("btnStrawberry").addEventListener("click", fruit)
 	document.getElementById("btnMango").addEventListener("click", fruit)
