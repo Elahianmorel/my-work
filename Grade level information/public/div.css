@@ -1,0 +1,11 @@
+button
+{
+	width:150px;
+	height: 150px;
+	background-color: lightblue;
+	margin: 10px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 150px;
+	font-weight: bold;
+}
