@@ -1,7 +1,16 @@
 window.addEventListener("load", addListener)
+
 total = 0
+
 fruit_amount = 0
-items = [apple, banana, Strawberry, Mango, Dragon, pineapple]
+
+let itemlist = {
+	"apple- $2": 2,
+	"banana - $3": 3,
+	"Strawberry- $1": 1,
+	"Mango - $2": 2,
+	"Dragon fruit - $4": 4,
+	"pineapple - $5" : 5}
 
 function addListener()
 {	
@@ -37,6 +46,7 @@ function fruit()
 	total = total + 3
 	fruit_amount = fruit_amount + 1
 	alert (total);
+	show()
 	
 
 }
@@ -44,7 +54,7 @@ function fruit()
 
 function show()
 {	
-	alert(total)
+	
 	amount = ["your total is $"+total,"you bought " + fruit_amount + " Fruits", "you bought " + vegetable_amount + " vegetables", "you bought " + snack_amount + " snacks" ];
 	
 	amount.innerHTML = "";
@@ -56,7 +66,6 @@ function show()
 			li = document.createElement("li");
 			li.textContent = amount[i]
 			itemList.appendChild(li)
-			
 			
 		}
 	
