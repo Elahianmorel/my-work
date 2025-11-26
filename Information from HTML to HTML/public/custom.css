@@ -10,8 +10,8 @@ body
 input
 {
 	width: 10%;
-	padding: 5px;
-	font-size: 10px;
+	padding: 15px;
+	font-size: 20px;
 
 }
 
@@ -47,4 +47,10 @@ th {
 	background-color: #7985c3;
 	color: white;
 	
+}
+
+Button 
+{
+	background-color: #f1f3fd;
+	font-size:30px;
 }
