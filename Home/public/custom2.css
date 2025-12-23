@@ -1,0 +1,31 @@
+body
+{
+	background-color: #E3E3E3;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+}
+
+.square {
+    height: 100px;
+    background-color: #234C6A;
+    width: 20%;
+	padding: 20px;
+	border: 8px solid #1B3C53;
+	border-radius: 25px;
+	font-size: 14px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0 2px 10px #020305;
+}
+
+h2
+{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #E3E3E3;
+	font-size: 35px;
+}

@@ -1,0 +1,35 @@
+body
+{
+	background-color: #E3E3E3;
+	align-items: left;
+	text-align: center;
+}
+input
+{
+	width: 20%;
+	padding: 20px;
+	border: 0px solid #ccc;
+	border-radius: 1px;
+	font-size: 14px;
+}
+.btn1
+{
+	background-color: #E3E3E3;;
+}
+.btn2
+{
+	background-color: #456882;;
+}
+.btn3
+{
+	background-color: #234C6A;;
+}
+.btn4
+{
+	background-color: #1B3C53;;
+}
+input[type="submit"]:hover
+{
+	background-color: #b96166;
+	color: #b96166;
+}
