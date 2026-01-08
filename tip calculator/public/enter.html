@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Project Calc</title>
+<title>Project calc</title>
 <script src="calc1.js"></script>
 <link rel="stylesheet" href="calc.css"></link>
 
 </head>
 <body>
-
+<div>
 <h1>Interactive Tip Calculator</h1>
+</div>
+
 <div class="square">
 <h2>Cost of service</h2>
 
@@ -26,7 +28,8 @@
 <button  type="submit" id="AA">Clear</button><br><br><br>
  </div>
 
-<h2>Tip percent</h2>
+<div class = "square1">
+<h3>Tip percent</h3>
 <input type="number" id="TipP" readonly><br>
 <button type="submit" id="1b" >1</button>
 <button type="submit" id="2b" >2</button>
@@ -39,9 +42,11 @@
 <button type="submit" id="9b" >9</button><br>
 <button type="submit" id="0b" >0</button>
 <button type="submit" id="AB">Clear</button><br><br><br>
+</div>
 
 <button type="submit" id="Calc" >Calculate</button><br><br>
 
+<div class = "result">
 <label>Cost of service: $</label>
 <input type="text" id="ServiceCost" readonly><br>
 <label>Tip Percent</label>
@@ -51,7 +56,7 @@
 <input type="text" id="TipAmount" readonly><br>
 <label>Total Cost:</label>
 <input type="text" id="TotalCost" readonly><br>
-
+</div>
 
 </body>
 </html>
