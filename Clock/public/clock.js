@@ -1,3 +1,4 @@
+
 function time()
 {
     var date = new Date();
@@ -28,3 +29,6 @@ function time()
     
     setTimeout(time, 1000); 
 }
+setInterval(time, 1000);
+time()
+
