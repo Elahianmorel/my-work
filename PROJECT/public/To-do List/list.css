@@ -1,0 +1,100 @@
+body {
+
+    background-color: #1f2747;
+    font-family: Arial, sans-serif;
+    color: #E3E8F3;
+    text-align: center;
+}
+
+
+h1 {
+    margin-top: 30px;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+
+h2 {
+    margin-top: 40px;
+    font-size: 28px;
+    color: #E3E8F3;
+}
+
+h3 {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #C9D1FF;
+}
+
+input[type="text"],
+select {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 2px solid #0A0F23E6;
+    background-color: #141920;
+    color: white;
+    margin: 6px;
+}
+
+button {
+    padding: 8px 14px;
+    margin: 6px;
+    border-radius: 12px;
+    border: 2px solid #0A0F23E6;
+    background-color: #141920;
+    color: white;
+}
+
+button:hover {
+    background-color: #1b2130;
+}
+
+
+#Monday{
+    width: 220px;
+    margin: 8px auto 20px auto;
+    display: block;
+    
+}
+
+#Tuesday{
+    width: 220px;
+    margin: 8px auto 20px auto;
+    display: block;
+}
+
+#Wednesday{
+    width: 220px;
+    margin: 8px auto 20px auto;
+    display: block;
+}
+
+#Thursday{
+	
+    width: 220px;
+    margin: 8px auto 20px auto;
+    display: block;
+    
+}
+
+
+#Friday{
+    width: 220px;
+    
+    margin: 8px auto 20px auto;
+    display: block;
+    
+}
+
+#Saturday{
+    width: 220px;
+    margin: 8px auto 20px auto;
+    display: block;
+}
+
+
+#Sunday {
+    width: 220px;
+    margin: 8px auto 20px auto;
+    display: block;
+}
