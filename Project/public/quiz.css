@@ -1,0 +1,434 @@
+body
+{
+	background-color: #1C2241E6;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+}
+
+h2
+{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #E3E3E3;
+	color: white;
+	font-size: 35px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+h1
+{
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
+
+#geo1
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+#bio1
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#chem1
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#physics1
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#algebra1
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+
+#geo2
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+#bio2
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#chem2
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#physics2
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#algebra2
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+
+#geo3
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+#bio3
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#chem3
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#physics3
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#algebra3
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+#geo4
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+#bio4
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#chem4
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#physics4
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#algebra4
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+#geo5
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+#bio5
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#chem5
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#physics5
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#algebra5
+{
+	 width: 15%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #0A0F23E6;
+    color: white;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+table {
+	background-color: #161C37E6;
+	width: 75%;
+	margin: 20px auto;
+	border-collapse: collapse;
+	box-shadow: 0 2px 10px #020305;
+	font-size: 15px;
+	color: white;
+	
+}
+th, td {
+	background-color: #161C37E6;
+	padding: 12px;
+	text-align: center;
+	color: white;
+}
