@@ -1,0 +1,18 @@
+body {
+		background: white;
+		text-align: center;
+}
+
+.square {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+    height: 100px;
+    background-color: white;
+    width: 20%;
+	padding: 20px;
+	border: 1px solid #2a7ed5;
+	border-radius: 25px;
+	font-size: 14px;
+	box-shadow: 0 2px 10px black;
+}
