@@ -1,0 +1,21 @@
+table {
+	margin: 60px;
+	margin-top:200px;
+	justify-content: center;
+    align-items: center;
+	text-align: center;
+	width: 90%;
+	box-shadow: 0 2px 5px #717e8f;
+	border: 1px solid #2a7ed5;
+	
+}
+th, td {
+	border: 1px solid black;
+	padding: 12px;
+	text-align: center;
+}
+
+th {
+	background-color: #7985c3;
+	
+}
