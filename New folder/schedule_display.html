@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Table Filled with Data</title>
+		<link rel="stylesheet" href="/static/custom.css"></link>
+	</head>
+	<body>
+		<table id="tblinfo">
+			<tr>
+				<th>Period</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+			
+			</tr>
+				{% for student in studentinfo %}
+					<tr>
+						<td>{{ student.period }}</td>
+						<td>{{ student.monday }}</td>
+						<td>{{ student.Tuesday}}</td>
+						<td>{{ student.Wednesday}}</td>
+						<td>{{ student.Thursday}}</td>
+						<td>{{ student.Friday}}</td>
+					</tr>
+				{% endfor %}
+			<a href="{{url_for('index')}}"><button>Go Back</button></a>
+		</table>
+	</body>
+</html>
+			
