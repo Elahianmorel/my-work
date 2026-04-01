@@ -6,23 +6,25 @@
 	<body>
 		<table id="tblinfo">
 			<tr>
+				<th>Period</th>
 				<th>Monday</th>
 				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+			
 			</tr>
 				{% for student in studentinfo %}
 					<tr>
-						<td>{{ student.id }}</td>
-						<td>
-							<a href="{{ url_for('CollectInfo', id=student.id) }}"></a>
-								{{ student.tuesday }}
-						</td>
+						<td>{{ student.period }}</td>
+						<td>{{ student.monday }}</td>
+						<td>{{ student.Tuesday}}</td>
+						<td>{{ student.Wednesday}}</td>
+						<td>{{ student.Thursday}}</td>
+						<td>{{ student.Friday}}</td>
 					</tr>
 				{% endfor %}
-			<tr>
-				<td>
-					<a href="{{url_for('index')}}"><button>Go Back</button></a>
-				</td>
-			</tr>
+			<a href="{{url_for('index')}}"><button>Go Back</button></a>
 		</table>
 	</body>
 </html>
