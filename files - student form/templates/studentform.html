@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Add New Student</title>
+        <link rel="stylesheet" href="/static/custom.css">
+    </head>
+    <body>
+        <form action="{{url_for('CollectInfo')}}">
+        <table id="tblinput">
+
+            <div class="square">
+
+                <h1>student info</h1>
+
+                <label id="lblschool" name="lblschool">School</label><br>
+                <select id="txtschool" name="txtschool" required>
+                    <option value=""></option>
+                    <option value="hhs">Hillcrest High School</option>
+                </select><br><br>
+
+                <label id="lblprgtype" name="lblprgtype">Program Type</label><br>
+                <select id="txtprogram" name="txtprogram" required>
+                    <option value=""></option>
+                    <option value="cte">CTE</option>
+                    <option value="ncte">NON CTE</option>
+                </select><br>
+
+                <label id="lblpathway" name="lblpathway">Pathway</label><br>
+                <select id="txtpathway" name="txtpathway" required>
+                    <option value=""></option>
+                    <option value="cad">CAD - Computer Aided-Design</option>
+                    <option value="cna">CNA - Certified Nursing Assisting</option>
+                    <option value="ems">EMS - Emergency Medical Services</option>
+                    <option value="swe">SWE - Software Engineering</option>
+                    <option value="ve">VE - Virtual Enterprise/Entrepreneur</option>
+                </select><br><br>
+
+                <label id="lblfirstname" name="lblfirstname">First Name</label><br>
+                <input type="text" id="txtfname" name="txtfirstname" required autofocus></input>
+                <br>
+
+
+                <div class="lastname">
+                    <label id="lbllastname" name="lbllastname">Last Name</label><br>
+                    <input type="text" id="txtlname" name="txtlname" required autofocus></input>
+                </div>
+				
+
+                <label id="lblmiddlei" name="lblmiddlei">Middle Initial</label><br>
+                <input type="text" id="txtmiddle1" name="txtmiddlei" size="1" maxlength="1"></input>
+                <br><br>
+
+                <label id="lblbirthdate" name="lblbirthdate">Birth Date</label><br>
+                <input type="date" id="txtbirth" name="txtbirth" required autofocus></input>
+                <br><br>
+				
+				
+
+                <label id="lblSSNITIN" name="lblSSNITIN">SSN/ITIN</label>
+                <input type="text" id="txtssn" name="txtssn" autofocus></input>
+                <br><br>
+
+                <label id="lblosis" name="lblosis">OSIS</label>
+                <input type="text" id="txtosis" name="txtosis" required autofocus></input>
+                <br><br>
+
+                <label id="lblid" name="lblid">Student ID</label>
+                <input type="text" id="txtid" name="txtid" required autofocus></input>
+                <br><br>
+
+                <h2>Schedule</h2>
+
+                <label>Period 1:</label>
+                <input type="text" id="txtpd1" name="txtpd1" required autofocus></input><br><br>
+
+                <label>Period 2:</label>
+                <input type="text" id="txtpd2" name="txtpd2" required autofocus></input><br><br>
+
+                <label>Period 3:</label>
+                <input type="text" id="txtpd3" name="txtpd3" required autofocus></input><br><br>
+
+                <label>Period 4:</label>
+                <input type="text" id="txtpd4" name="txtpd4"></input><br><br>
+
+                <label>Period 5:</label>
+                <input type="text" id="txtpd5" name="txtpd5"></input><br><br>
+
+                <label>Period 6:</label>
+                <input type="text" id="txtpd6" name="txtpd6"></input><br><br>
+
+                <label>Period 7:</label>
+                <input type="text" id="txtpd7" name="txtpd7"></input><br><br>
+
+                <label>Period 8:</label>
+                <input type="text" id="txtpd8" name="txtpd8"></input><br><br>
+
+
+                <button type="submit" id="btnsubmit" name="btnsubmit">SUBMIT</button>
+                <button type="reset" id="btnclear" name="btnclear">CLEAR</button>
+
+            </div>
+
+        </table>
+        </form>
+    </body>
+</html>
