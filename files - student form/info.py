@@ -37,7 +37,7 @@ def CollectInfo():
     else:
         ssn = ssn
 
-    infofilename = "StudentInformation" + str(sid) + ".txt"
+    infofilename = "Student Information " + str(sid) + ".txt"
     filepath = os.path.join(studentinfo, infofilename)
     with open(filepath, 'w') as f:
         f.write("=== STUDENT INFORMATION ===")
@@ -60,13 +60,10 @@ def CollectInfo():
         pd8= request.args.get("txtpd8")
 
  
-    schedname = "StudentSchedule" + str(sid) + ".txt"
+    schedname = "Student Schedule " + str(sid) + ".txt"
     schedname = os.path.join(studentinfo, schedname)
     with open(filepath, 'w') as fcreate:
         fcreate.write("=== STUDENT SCHEDULE ===")
-        fcreate.write("Full Name:  " + fullname)
-        fcreate.write("Student ID: " + str(sid))
-        fcreate.write("--- Schedule ---")
         fcreate.write("Period 1: " + pd1 )
         fcreate.write("Period 2: " + pd2)
         fcreate.write("Period 3: " + pd3)
@@ -76,7 +73,13 @@ def CollectInfo():
         fcreate.write("Period 7: " + pd7)
         fcreate.write("Period 8: " + pd8)
  
-    return render_template("studentform_out.html", school=school, program=program, firstname=firstname, lastname=lastname, birth=birth, pathhway=pathhway, osis=osis, ssn=ssn, middle=middle, sid=sid, pd1=pd1, pd2=pd2, pd3=pd3, pd4=pd4, pd5=pd5, pd6=pd6, pd7=pd7, pd8=pd8, infofile=infofilename, schedfile=schedname)
+    return render_template("studentform_out.html", school=school, program=program,
+                           firstname=firstname, lastname=lastname,
+                           birth=birth, pathhway=pathhway,
+                           osis=osis, ssn=ssn, middle=middle,
+                           sid=sid, pd1=pd1, pd2=pd2, pd3=pd3,
+                           pd4=pd4, pd5=pd5, pd6=pd6, pd7=pd7,
+                           pd8=pd8, infofile=infofilename, schedfile=schedname)
  
 if __name__ == "__main__":
     app.run()
