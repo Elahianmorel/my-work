@@ -7,7 +7,7 @@
         <form action="{{url_for('CollectInfo')}}">
         <table id="tblinput">
 
-
+       <div class="info">
                 <h1>student info</h1>
 
                 <label id="lblschool" name="lblschool">School</label><br>
@@ -65,9 +65,12 @@
                 <label id="lblid" name="lblid">Student ID</label>
                 <input type="text" id="txtid" name="txtid" required autofocus></input>
                 <br><br>
-
+		</div>
+		
+		<div class="sched">
                 <h2>Schedule</h2>
-
+				
+				
                 <label>Period 1:</label>
                 <input type="text" id="txtpd1" name="txtpd1" required autofocus></input><br><br>
 
@@ -91,7 +94,7 @@
 
                 <label>Period 8:</label>
                 <input type="text" id="txtpd8" name="txtpd8"></input><br><br>
-
+		</div>
 
                 <button type="submit" id="btnsubmit" name="btnsubmit">SUBMIT</button>
                 <button type="reset" id="btnclear" name="btnclear">CLEAR</button>
