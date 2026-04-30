@@ -1,17 +1,50 @@
+body{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	background: #FFF8EC;
+	
+}
+
+.info {
+	
+	background: #99AD7A;
+	border: 1px solid #546B41;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin: 100px;
+	width: 25%;
+	box-shadow: 5px 8px 10px #717e8f;
+}
+
+.sched {
+	background: #99AD7A;
+	border: 1px solid #546B41;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin: 100px;
+	width: 25%;
+	box-shadow: 5px 8px 10px #717e8f;
+}
+
+
 
 table {
-	margin: 60px;
-	margin-top:200px;
+	background: white;
+	margin-top:10px;
 	justify-content: center;
     align-items: center;
 	text-align: center;
-	width: 45%;
+	width: 20%;
 	box-shadow: 0 2px 5px #717e8f;
-	border: 1px solid #2a7ed5;
+
 	
 }
 th, td {
-	border: 1px solid black;
+	
+	border: 1px solid #546B41;
 	padding: 12px;
 	text-align: center;
 	justify-content: center;
@@ -19,7 +52,7 @@ th, td {
 }
 
 th {
-	background-color: white;
+	background-color: 99AD7A;
 	justify-content: center;
     align-items: center;
 	text-align: center;
