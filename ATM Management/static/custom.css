@@ -29,3 +29,46 @@ input
 	font-size: 20px;
 }
 
+.log{
+	width: 45%;
+    height: 75px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #adbfd1;
+    color: white;
+	font-size: 30px;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 2px 3px 16px #000000;
+}
+
+.sign{
+	width: 45%;
+    height: 75px;
+    border-radius: 14px;
+    border: 0px;
+    background-color: #adbfd1;
+    color: white;
+	font-size: 30px;
+    text-align: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 2px 3px 16px #000000;
+}
+
+.option{
+	justify-content: center;
+    align-items: center;
+	text-align: center;
+	margin-top: 150px;
+	margin-left: 750px;
+    background-color: #94abc3;
+    padding: 50px;
+    border-radius: 0px;
+    width: 300px;
+	height: 400px;
+    
+}
