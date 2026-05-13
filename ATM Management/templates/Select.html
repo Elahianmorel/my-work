@@ -4,16 +4,16 @@
 		<link rel="stylesheet" href="/static/custom.css">
     </head>
     <body>
-        <form method='POST' action="{{url_for('CollectInfo')}}">
+        <form method='GET' action="{{url_for('index')}}">
 		<table id="tblinput">
 			<div class="option">
-				<button type="submit" id="btnlogin" name="btnlogin" class = "log">Log In</button>
-	
+
+				<a href="{{url_for('login')}}"><button>LOG IN</button></a>
 				<br>
 				<br>
-				<br>
+				<br>	
 				
-				<button type="submit" id="btnsign" name="btnsign" class = "sign">Sign Up</button>
+				<a href="{{url_for('signup')}}"><button>SIGN UP</button></a>
 				
 				<br>
 				<br>
