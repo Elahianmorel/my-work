@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>URL_FOR</title>
+		<link rel="stylesheet" href="/static/custom.css">
+    </head>
+    <body>
+        <form method='POST' action="{{url_for('login')}}">
+		
+		<label id="lblusername="lbluser">Log In</label><br><br>
+		<table id="tblinput">
+		
+		<div class="login">
+			<label id="lblusername="lbluser">Username or Email</label><br><br>
+            <input type="text" id="txtname" name="txtname" required autofocus></input>
+			<br>
+			<br>
+			
+			<label id="lblpassword="lbluser">Password</label><br><br>
+            <input type="text" id="txtpassword" name="txtpassword" required autofocus></input>
+			<br>
+			<br>
+			
+			<button type="submit" id="btnsubmit" name="btnsubmit">SUBMIT</button>
+			
+            <button type="reset" id="btnclear" name="btnclear">CLEAR</button>
+		</div>	
+		</table>
+		</form>
+    </body>
+</html>
