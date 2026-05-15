@@ -4,17 +4,21 @@
 		<link rel="stylesheet" href="/static/custom.css">
     </head>
     <body>
-        <form method='GET' action="{{url_for('index')}}">
+        <form method='GET' action="{{url_for('login')}}">
 		<table id="tblinput">
 			<div class="option">
-
-				<a href="{{url_for('login')}}"><button>LOG IN</button></a>
+				
+				<a href="{{url_for('login')}}"><button>Login</button></a>
+				
 				<br>
 				<br>
-				<br>	
-				
-				<a href="{{url_for('signup')}}"><button>SIGN UP</button></a>
-				
+				<br>
+		</table>
+		</form>
+		<form method='GET' action="{{url_for('signup')}}">
+		<table id="tblinput1>
+				<a href="{{url_for('signup')}}"><button>sign Up</button></a>
+			
 				<br>
 				<br>
 				<br>
