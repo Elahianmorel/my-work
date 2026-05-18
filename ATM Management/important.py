@@ -1,26 +1,66 @@
-from flask import Flask, render_template, request
-
+from flask import Flask, render_template, url_for, redirect, request
+import os
+ 
 app = Flask(__name__)
-
-@app.route("/",methods=['GET'])
+ 
+checknotes = os.path.join('static', 'notes')
+if not os.path.exists(checknotes):
+    os.makedirs(checknotes)
+ 
+balancefile = os.path.join(checknotes, 'balance.txt')
+if not os.path.exists(balancefile):
+    with open(balancefile, 'w') as f:
+        f.write("1000.00")
+ 
+pinfile = os.path.join(checknotes, 'pin.txt')
+ 
+@app.route("/", methods=['GET'])
 def index():
     return render_template("Select.html")
+ 
+def CreatePin():
+    return render_template("CreatePin.html", message="")
 
 
-@app.route("/userinfo",methods=['GET'])
+@app.route("/createpinoutput", methods=['POST'])
+def CreatePinOutput():
+    global message
+    message = ""
+ 
+    pin = request.form.get("txtpin")
+    confirmpin = request.form.get("txtconfirmpin")
+ 
+    if pin != confirmpin:
+        message = "wrong pin please try again"
+        return render_template("CreatePin.html", message=message)
+ 
+    if len(pin) < 4:
+        message = "PIN must be 4 digits"
+        return render_template("CreatePin.html", message=message)
+ 
+    with open(pinfile, 'w') as fcreate:
+        fcreate.write(pin)
+ 
+    message = "PIN created successfully!"
+    return render_template("CreatePin.html", message=message) 
+
+
+@app.route("/userinfo", methods=['GET'])
 def Withdraw():
+   
     return render_template("Withdraw.html")
-    
-@app.route('/userinfo1', methods=['GET'])
+ 
+@app.route("/userinfo1", methods=['GET'])
 def Deposit():
-
-            return render_template("Deposit.html")
-
-@app.route('/userinfo2', methods=['GET'])
-def Balance():
     
-            return render_template("balance.html")
-
-
+ 
+    return render_template("Deposit.html",)
+ 
+@app.route("/userinfo2", methods=['GET'])
+def Balance():
+   
+ 
+    return render_template("balance.html")
+ 
 if __name__ == '__main__':
     app.run()
