@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Create PIN</title>
+        <link rel="stylesheet" href="/static/custom.css">
+    </head>
+    <body>
+        <h2>Create PIN</h2>
+
+        <form method="POST" action="{{url_for('CreatePin')}}">
+            <table id="tblinput">
+                <div class="square">
+
+                    <label name="lblpin">Enter New PIN:</label><br>
+                    <input type="password" name="txtpin" id="txtpin" required autofocus></input>
+                    <br><br>
+
+                    <label name="lblconfirmpin">Confirm PIN:</label><br>
+                    <input type="password" name="txtconfirmpin" id="txtconfirmpin" required></input>
+                    <br><br>
+
+                    {% if message %}
+                        <label>{{message}}</label><br><br>
+                    {% endif %}
+
+                    <button type="submit">Create PIN</button>
+                    <a href="{{url_for('index')}}"><button type="button">Go Back</button></a>
+
+                </div>
+            </table>
+        </form>
+    </body>
+</html>
