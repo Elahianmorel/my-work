@@ -8,13 +8,18 @@ def index():
 
 
 @app.route("/userinfo",methods=['GET'])
-def signup():
-    return render_template("signup.html")
+def Withdraw():
+    return render_template("Withdraw.html")
     
 @app.route('/userinfo1', methods=['GET'])
-def login():
+def Deposit():
 
-            return render_template("Login.html")
+            return render_template("Deposit.html")
+
+@app.route('/userinfo2', methods=['GET'])
+def Balance():
+    
+            return render_template("balance.html")
 
 
 if __name__ == '__main__':
