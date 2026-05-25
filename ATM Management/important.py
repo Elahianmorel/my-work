@@ -1,66 +1,98 @@
 from flask import Flask, render_template, url_for, redirect, request
 import os
- 
+
 app = Flask(__name__)
- 
+
 checknotes = os.path.join('static', 'notes')
 if not os.path.exists(checknotes):
     os.makedirs(checknotes)
- 
+
+
 balancefile = os.path.join(checknotes, 'balance.txt')
 if not os.path.exists(balancefile):
     with open(balancefile, 'w') as f:
-        f.write("1000.00")
- 
+        f.write("0")
+
 pinfile = os.path.join(checknotes, 'pin.txt')
- 
+
+
+
 @app.route("/", methods=['GET'])
 def index():
     return render_template("Select.html")
- 
+
+
+
+@app.route("/createpin", methods=['GET'])
 def CreatePin():
     return render_template("CreatePin.html", message="")
-
 
 @app.route("/createpinoutput", methods=['POST'])
 def CreatePinOutput():
     global message
     message = ""
- 
+
     pin = request.form.get("txtpin")
-    confirmpin = request.form.get("txtconfirmpin")
- 
-    if pin != confirmpin:
-        message = "wrong pin please try again"
-        return render_template("CreatePin.html", message=message)
- 
+
     if len(pin) < 4:
-        message = "PIN must be 4 digits"
+        message = "pin should be 4 numbers"
         return render_template("CreatePin.html", message=message)
- 
+
     with open(pinfile, 'w') as fcreate:
         fcreate.write(pin)
- 
-    message = "PIN created successfully!"
-    return render_template("CreatePin.html", message=message) 
 
+    message = "PIN created"
+    return render_template("CreatePin.html", message=message)
 
 @app.route("/userinfo", methods=['GET'])
 def Withdraw():
+    return render_template("Withdraw.html", message="")
+
+
+@app.route("/userinfoutput", methods=['POST'])
+def WithdrawOutput():
    
     return render_template("Withdraw.html")
- 
+
 @app.route("/userinfo1", methods=['GET'])
 def Deposit():
-    
- 
-    return render_template("Deposit.html",)
- 
+    return render_template("Deposit.html", message="")
+
+@app.route("/userinfo1output", methods=['POST'])
+def DepositOutput():
+   
+    return render_template("Deposit.html")
+
 @app.route("/userinfo2", methods=['GET'])
 def Balance():
-   
- 
-    return render_template("balance.html")
- 
+    return render_template("balance.html", balance="")
+
+@app.route("/userinfo2output", methods=['POST'])
+def BalanceOutput():
+    global balance
+    balance = ""
+
+    pin = request.form.get("txtpin")
+
+
+
+    if not os.path.exists(pinfile):
+        balance = "No pin found."
+        return render_template("balance.html", balance=balance)
+
+    with open(pinfile, 'r') as fread:
+        savedpin = fread.read()
+
+
+  
+    if pin != savedpin:
+        balance = "Incorrect pin "
+        return render_template("balance.html", balance=balance)
+
+    with open(balancefile, 'r') as fread:
+        balance = fread.read()
+
+    return render_template("balance.html", balance=balance)
+
 if __name__ == '__main__':
     app.run()
