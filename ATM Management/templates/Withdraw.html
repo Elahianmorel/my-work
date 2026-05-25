@@ -1,30 +1,32 @@
 <html>
     <head>
-        <title>URL_FOR</title>
-		<link rel="stylesheet" href="/static/custom.css">
+        <title>Withdraw</title>
+        <link rel="stylesheet" href="/static/custom.css">
     </head>
     <body>
-        <form method='GET' action="{{url_for('index')}}">
-		
-		<label id="lblusername="lbluser">SIGN UP</label><br><br>
-		<table id="tblinput">
-		
-		<div class="login">
-			<label id="lblusername="lbluser">Username or Email</label><br><br>
-            <input type="text" id="txtname" name="txtname" required autofocus></input>
-			<br>
-			<br>
-			
-			<label id="lblpassword="lbluser">Password</label><br><br>
-            <input type="text" id="txtpassword" name="txtpassword" required autofocus></input>
-			<br>
-			<br>
-			
-			<button type="submit" id="btnsubmit" name="btnsubmit">SUBMIT</button>
-			
-            <button type="reset" id="btnclear" name="btnclear">CLEAR</button>
-		</div>	
-		</table>
-		</form>
+        <h2>Withdraw Cash</h2>
+
+        <form method="POST" action="{{url_for('WithdrawOutput')}}">
+            <table id="tblinput">
+                <div class="square">
+
+                    <label name="lblpin">Enter PIN:</label><br>
+                    <input type="password" name="txtpin" id="txtpin" required autofocus></input>
+                    <br><br>
+
+                    <label name="lblamount">Enter Amoun:</label><br>
+                    <input type="number" name="txtamount" id="txtamount" min="0" step="1" required></input>
+                    <br><br>
+
+                    {% if message %}
+                        <label>{{message}}</label><br><br>
+                    {% endif %}
+
+                    <button type="submit">Withdraw</button>
+                    <a href="{{url_for('index')}}"><button type="button">Go Back</button></a>
+
+                </div>
+            </table>
+        </form>
     </body>
 </html>
