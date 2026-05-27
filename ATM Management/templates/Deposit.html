@@ -6,24 +6,20 @@
     <body>
         <h2>Deposit Cash</h2>
 
-        <form method="POST" action="{{url_for('Deposit')}}">
+        <form method="POST" action="{{url_for('DepositOutput')}}">
             <table id="tblinput">
                 <div class="square">
 
-              <label name="lblpin">Enter PIN:</label><br>
-                    <input type="text" name="txtpin" id="txtpin" required autofocus></input>
+                    <label name="lblpin">Enter PIN:</label><br>
+                    <input type="password" name="txtpin" id="txtpin" required autofocus></input>
                     <br><br>
 
-                   <label name="lblamount">Enter Deposit Amount:</label><br>
-                    <input type="number" name="txtamount" id="txtamount" min="1" step="0.01" required></input>
+                    <label name="lblamount">Enter Deposit Amount:</label><br>
+                    <input type="number" name="txtamount" id="txtamount" min="1" required></input>
                     <br><br>
 
-                    {% if error %}
-                        <label >{{error}}</label><br><br>
-                    {% endif %}
-
-                    {% if success %}
-                        <label >{{success}}</label><br><br>
+                    {% if message %}
+                        <label>{{message}}</label><br><br>
                     {% endif %}
 
                     <button type="submit">Deposit</button>
