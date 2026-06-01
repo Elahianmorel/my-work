@@ -60,8 +60,39 @@ def Deposit():
 
 @app.route("/userinfo1output", methods=['POST'])
 def DepositOutput():
-   
-    return render_template("Deposit.html")
+        global message
+    message = ""
+
+    pin = request.form.get("txtpin")
+    amount = request.form.get("txtamount")
+
+    if not os.path.exists(pinfile):
+        message = "No PIN found. Please create a PIN first."
+        return render_template("Deposit.html", message=message)
+
+    with open(pinfile, 'r') as fread:
+        savedpin = fread.read()
+
+    if pin != savedpin:
+        message = "Incorrect PIN. Please try again."
+        return render_template("Deposit.html", message=message)
+
+    with open(balancefile, 'r') as fread:
+        balance = float(fread.read())
+
+    amount = float(amount)
+
+    if amount <= 0:
+        message = "Deposit amount must be greater than zero."
+        return render_template("Deposit.html", message=message)
+
+    balance = balance + amount
+
+    with open(balancefile, 'w') as fcreate:
+        fcreate.write(str(balance))
+
+    message = "Deposit successful! $" + str(amount) + " added. New balance: $" + str(balance)
+    return render_template("Deposit.html", message=message)
 
 @app.route("/userinfo2", methods=['GET'])
 def Balance():
