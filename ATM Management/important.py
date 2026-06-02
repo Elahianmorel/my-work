@@ -42,17 +42,51 @@ def CreatePinOutput():
         fcreate.write(pin)
 
     message = "PIN created"
+
     return render_template("CreatePin.html", message=message)
 
 @app.route("/userinfo", methods=['GET'])
 def Withdraw():
-    return render_template("Withdraw.html", message="")
+    return render_template("withdraw.html", message="")
 
 
 @app.route("/userinfoutput", methods=['POST'])
 def WithdrawOutput():
-   
-    return render_template("Withdraw.html")
+
+    global message
+    message = ""
+
+    pin = request.form.get("txtpin")
+    amount = request.form.get("txtamount")
+
+    if not os.path.exists(pinfile):
+        message = "No PIN found. Please create a PIN first."
+        return render_template("withdraw.html", message=message)
+
+    with open(pinfile, 'r') as fread:
+        savedpin = fread.read()
+
+    if pin != savedpin:
+        message = "Incorrect PIN. Please try again."
+        return render_template("withdraw.html", message=message)
+
+    with open(balancefile, 'r') as fread:
+        balance = float(fread.read())
+
+    amount = float(amount)
+
+    if amount <= 0:
+        message = "withdraw amount must be greater than zero."
+        return render_template("withdraw.html", message=message)
+
+    balance = balance - amount
+
+    with open(balancefile, 'w') as fcreate:
+        fcreate.write(str(balance))
+
+    message = "withdraw successful! $" + str(amount) + ". New balance: $" + str(balance)
+    return render_template("withdraw.html", message=message)
+
 
 @app.route("/userinfo1", methods=['GET'])
 def Deposit():
@@ -60,7 +94,7 @@ def Deposit():
 
 @app.route("/userinfo1output", methods=['POST'])
 def DepositOutput():
-        global message
+    global message
     message = ""
 
     pin = request.form.get("txtpin")
@@ -91,7 +125,7 @@ def DepositOutput():
     with open(balancefile, 'w') as fcreate:
         fcreate.write(str(balance))
 
-    message = "Deposit successful! $" + str(amount) + " added. New balance: $" + str(balance)
+    message = "Deposit successful! $" + str(amount) + ". New balance: $" + str(balance)
     return render_template("Deposit.html", message=message)
 
 @app.route("/userinfo2", methods=['GET'])
