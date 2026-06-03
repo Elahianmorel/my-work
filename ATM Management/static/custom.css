@@ -1,41 +1,52 @@
-body{
+body
+{
+	background-color: #6eaee0;
 	justify-content: center;
-    align-items: center;
-	background: #cdd8e3;
+	align-items: center;
 	text-align: center;
+}
+
+label
+{
+	display:inline-block;
+	color: #f7fafe;
 	
 }
 
-.login{
-	justify-content: center;
-    align-items: center;
-	text-align: center;
-	margin-top: 150px;
-	margin-left: 750px;
-    background-color: #94abc3;
-    padding: 50px;
-    border-radius: 20px;
-    width: 500px;
-    box-shadow: 2px 3px 16px #000000;
-	
-}
 input
-{	
-	
-	width: 90%;
+{
+	width: 20%;
 	padding: 20px;
-	border: 2px solid rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255);
 	border-radius: 10px;
-	font-size: 20px;
+	font-size: 14px;
 }
 
+button:hover
+{
+	background-color:  #8ec0e7;
+	color: #f7fafe;
+	
+}
 
-
-.login1 {
-	justify-content: center;
-    align-items: center;
-	text-align: center;
-	width: 90%;
+button{
+	background-color:  #f7fafe;
+	font-size: 20px;
 	padding: 20px;
-	border: 2px solid rgb(255, 255, 255);
+	border: 1px solid black;
+	border-radius: 10px;
+	font-size: 14px;
+	
+}
+
+.select{
+	margin-left: center;
+	width: 20%;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 14px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #f7fafe;
 }
