@@ -3,10 +3,11 @@
         <title>URL_FOR</title>
 		<link rel="stylesheet" href="/static/custom.css">
     </head>
-    <body>
+    
+	<body>
+	<div class="select">
         <form method='GET' action="{{url_for('Withdraw')}}">
 		<table id="tblinput">
-			<div class="option">
 				
 				<a href="{{url_for('Withdraw')}}"><button  class="login1" >Withdraw</button></a>
 				
@@ -15,6 +16,7 @@
 				<br>
 		</table>
 		</form>
+		
 		<form method='GET' action="{{url_for('Deposit')}}">
 		<table id="tblinput2">
 				<a href="{{url_for('Deposit')}}"><button >Deposit</button></a>
@@ -22,7 +24,7 @@
 				<br>
 				<br>
 				<br>
-			</div>
+				
 		</table>
 		</form>
 		
@@ -33,20 +35,19 @@
 				<br>
 				<br>
 				<br>
-		</table>		
+		</table>
+		</form>		
+		
 		<form method='GET' action="{{url_for('CreatePin')}}">
-		<table id="tblinput4">
+		<table id="tblinput5">
 				<a href="{{url_for('CreatePin')}}"><button >Create Pin</button></a>
 			
 				<br>
 				<br>
 				<br>
-			</div>
+
 		</table>
 		</form>
-		
-			</div>
-		</table>
-		</form>
+	</div>
     </body>
 </html>
