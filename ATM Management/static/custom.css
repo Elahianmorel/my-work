@@ -1,15 +1,21 @@
 body
 {
-	background-color: #6eaee0;
+	background-color: #FFFFF;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
 
 label
+
+h1{
+	color: white;
+	background-color: #FFFFFF;
+}
+
 {
 	display:inline-block;
-	color: #f7fafe;
+	color: black;
 	
 }
 
@@ -17,7 +23,7 @@ input
 {
 	width: 20%;
 	padding: 20px;
-	border: 1px solid rgb(255, 255, 255);
+	border: 1px solid black;
 	border-radius: 10px;
 	font-size: 14px;
 }
@@ -48,5 +54,6 @@ button{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: #f7fafe;
+	background-color: #6eaee0;
 }
+
